@@ -17,3 +17,5 @@ Link: https://www.kaggle.com/c/petfinder-pawpularity-score
 
 For this challenge, I believe that Convolutional Network is the network architecture that made the most sense here because we are predicting using images. 
 I use Convolution layers to extract the features from the images. I also use ReLU activation since the image pixel is bigger than 0, together with MaxPool, BatchNorm2d, Dropout2d, and Linear as the layers using PyTorch packages. From the competition’s discussion, there are some suggestions to use linear regression model combined with deep learning on metadata in order to achieve better score.
+
+In this contest, I also try out the Linear models and Ensemble Models approaches, but didn't get a good result. The reason may be due to the complication of the problem that the metadata with just 12 features is certainly not enough to predict the attribute (e.g pawpularity) of an image compared to training using the image itself. 
